@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--clr-dark);
+}
+
+:root {
+  --clr-blue: #33658A;
+  --clr-light-blue: #86BBD8;
+  --clr-dark: #2F4858;
+  --clr-gray: #999;
+  --clr-red: #F95B51;
+  --clr-green: #25A969;
+  --clr-black: #000;
+  --clr-white: #FFF;
+}
+
+.App {
+  position: relative;
+  min-height: 100vh;
+  max-width: 76.8rem;
+  margin: auto;
+  padding: 0 1rem;
+  background-color: #EEF8F7;
+}
+
+
+/* ==========================================================================
+typography starts
+========================================================================== */
+.heading01 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.heading02 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.heading03 {
+  font-size: 1.8rem;
+}
+
+.error {
+  color: var(--clr-red);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* ==========================================================================
+typography ends
+========================================================================== */
+
+
+/* ==========================================================================
+utility starts
+========================================================================== */
+.tCenter { text-align: center !important; }
+.fwNromal { font-weight: normal !important; }
+.fwBold { font-weight: bold !important; }
+.tCaps { text-transform: capitalize !important; }
+.fs10 { font-size: 1rem !important; }
+.fs11 { font-size: 1.1rem !important; }
+.fs12 { font-size: 1.2rem !important; }
+.fs13 { font-size: 1.3rem !important; }
+.fs14 { font-size: 1.4rem !important; }
+.fs15 { font-size: 1.5rem !important; }
+.fs16 { font-size: 1.6rem !important; }
+.mb0 { margin-bottom: 0 !important; }
+.mt5 { margin-top: .5rem !important; }
+.mt10 { margin-top: 1rem !important; }
+.mt15 { margin-top: 1.5rem !important; }
+.mt20 { margin-top: 2rem !important; }
+.mt30 { margin-top: 3rem !important; }
+.mt40 { margin-top: 4rem !important; }
+.mt50 { margin-top: 5rem !important; }
+.pt10 { padding-top: 1rem !important; }
+.pt20 { padding-top: 2rem !important; }
+.flex { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; }
+/* ==========================================================================
+utility ends
+========================================================================== */
+
+
+/* ==========================================================================
+button starts
+========================================================================== */
+.btn {
+  width: 100%;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--clr-blue);
+  text-align: center;
+  color: var(--clr-white);
+  font-size: 1.6rem;
+  font-weight: 600;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0 .8rem 2.4rem;
+          box-shadow: rgba(149, 157, 165, 0.2) 0 .8rem 2.4rem;
+  cursor: pointer;
+}
+
+.btn.btnRed {
+  background-color: var(--clr-red);
+}
+
+.backBtn {
+  padding: .4rem 1rem;
+  background: var(--clr-blue);
+  border: none;
+  color: var(--clr-white);
+  border-radius: .3rem;
+  outline: none;
+  cursor: pointer;
+}
+/* ==========================================================================
+button ends
+========================================================================== */
+
+
+/* ==========================================================================
+auth starts
+========================================================================== */
+.auth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 100vh;
+  margin: 0 -1rem;
+  padding: 3rem 1rem;
+  background-color: var(--clr-white);
+  text-align: center;
+}
+
+.auth .title {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+
+.auth .text {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.auth .mv {
+  width: 85%;
+  margin: 0 auto;
+}
+/* ==========================================================================
+auth ends
+========================================================================== */
+
+
+/* ==========================================================================
+header starts
+========================================================================== */
+header {
+  position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
+  padding: 1rem 0;
+}
+
+header .title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+header .cl-internal-1j7ahlv {
+  width: 3rem;
+  height: 3rem;
+}
+
+.burger-menu-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 3rem;
+  height: 2rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.burger-menu-icon div {
+  width: 100%;
+  height: .4rem;
+  background-color: #333;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  -o-transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+}
+
+.burger-menu-icon.open div:nth-child(1) {
+  -webkit-transform: translateY(.8rem) rotate(45deg);
+      -ms-transform: translateY(.8rem) rotate(45deg);
+          transform: translateY(.8rem) rotate(45deg);
+}
+
+.burger-menu-icon.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-menu-icon.open div:nth-child(3) {
+  -webkit-transform: translateY(-.8rem) rotate(-45deg);
+      -ms-transform: translateY(-.8rem) rotate(-45deg);
+          transform: translateY(-.8rem) rotate(-45deg);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -70%;
+  width: 70%;
+  height: 100%;
+  background-color: var(--clr-white);
+  -webkit-box-shadow: -.2rem 0 .5rem rgba(0,0,0,0.1);
+          box-shadow: -.2rem 0 .5rem rgba(0,0,0,0.1);
+  -webkit-transition: right 0.3s;
+  -o-transition: right 0.3s;
+  transition: right 0.3s;
+  z-index: 2;
+}
+
+.menu.open {
+  right: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 2rem;
+}
+
+.menu ul li {
+  margin: 2rem 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.8rem;
+}
+/* ==========================================================================
+header starts
+========================================================================== */
+
+
+/* ==========================================================================
+card starts
+========================================================================== */
+.card {
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  border-radius: 1.5rem;
+  font-weight: 600;
+}
+
+.card .circle {
+  padding: 0.2rem 0.4rem;
+  margin-right: .5rem;
+  background-color: var(--clr-light-blue);
+  border-radius: 50%;
+}
+/* ==========================================================================
+card ends
+========================================================================== */
+
+
+/* ==========================================================================
+transaction starts
+========================================================================== */
+.transaction {
+  position: relative;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1rem 1rem 6rem;
+  background-color: var(--clr-white);
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0 .8rem 2.4rem;
+          box-shadow: rgba(149, 157, 165, 0.2) 0 .8rem 2.4rem;
+  border-radius: .8rem;
+  min-height: 6rem;
+  cursor: pointer;
+}
+
+.transaction div:first-child {
+  width: 68%;
+  margin-right: 2%;
+}
+
+.transaction div:nth-child(2) {
+  width: 30%;
+  text-align: right;
+}
+
+.transaction .title {
+  margin-bottom: .5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.transaction .description {
+  font-size: 1.3rem;
+  color: var(--clr-gray);
+}
+
+.transaction .amount {
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+.transaction .amount.income {
+  color: var(--clr-green);
+}
+
+.transaction .amount.expense {
+  color: var(--clr-red);
+}
+
+.transaction .amount.expense::before {
+  content: '- ';
+}
+
+.transaction .date {
+  font-size: 1.3rem;
+  color: var(--clr-gray);
+}
+
+.transaction .buttonControls {
+  display: none;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 1rem;
+}
+
+.transaction:hover .buttonControls {
+  display: block;
+}
+
+.transaction .buttonControls button {
+  padding: .5rem 1rem;
+  margin-left: 1.4rem;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: .5rem;
+}
+
+.transaction::before {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4rem;
+  height: 4rem;
+  border-radius: .5rem;
+  background-color: var(--clr-light-blue);
+}
+
+.transaction::after {
+  content: '';
+  position: absolute;
+  left: 1.9rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+}
+
+.transaction.shopping::after {
+  background: url('/assets/images/shopping-cart-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.food::after {
+  background: url('/assets/images/food-restaurant-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.beverage::after {
+  background: url('/assets/images/drinks-beer-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.cigarette::after {
+  background: url('/assets/images/cigarette-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.vape::after {
+  background: url('/assets/images/vape-kit-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.travel::after {
+  background: url('/assets/images/travel-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.health::after {
+  background: url('/assets/images/health-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.transportation::after {
+  background: url('/assets/images/truck-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.rent::after {
+  background: url('/assets/images/rent-house-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.electricity::after {
+  background: url('/assets/images/electricity-home-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.internet::after {
+  background: url('/assets/images/wifi-good-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.water::after {
+  background: url('/assets/images/water-bill-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.business::after {
+  background: url('/assets/images/business-briefcase-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.salary::after {
+  background: url('/assets/images/money-bag-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.credit::after {
+  background: url('/assets/images/credit-card-minus-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.load::after {
+  background: url('/assets/images/sim-card-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.bills::after {
+  background: url('/assets/images/cash-ecommerce-shop-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.gadgets::after {
+  background: url('/assets/images/devices-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.vehicle::after {
+  background: url('/assets/images/car-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.entertainment::after {
+  background: url('/assets/images/entertainment-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+
+.transaction.family::after {
+  background: url('/assets/images/family-house-svgrepo-com.svg') no-repeat;
+  background-size: contain;
+}
+/* ==========================================================================
+transaction ends
+========================================================================== */
+
+
+/* ==========================================================================
+form starts
+========================================================================== */
+.form .formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.form label,
+.form input,
+.form select {
+  display: block;
+  width: 100%;
+  font-size: 1.4rem;
+}
+
+.form input,
+.form select {
+  margin-top: .5rem;
+  padding: .6rem 1rem;
+}
+
+.formFilter {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+}
+
+.formFilter label {
+  display: block;
+  margin-bottom: .3rem;
+}
+/* ==========================================================================
+form ends
+========================================================================== */
+
+
+/* ==========================================================================
+notFound starts
+========================================================================== */
+.notFound {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+/* ==========================================================================
+notFound ends
+========================================================================== */
