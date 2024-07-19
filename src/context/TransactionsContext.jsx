@@ -3,13 +3,10 @@ import axios from 'axios'
 import { useUser } from "@clerk/clerk-react";
 
 const TransactionsContext = createContext();
-// const API_URL = 'http://localhost:3000/api/expenses/';
 const API_URL = 'https://financeappapi-3ghx.onrender.com/api/expenses/';
-// const API_URL = 'https://jsonplaceholder.typicode.com/todos/';
 
 const TransactionsProvider = ({ children }) => {
   const [transactions, setTransactions] = useState([])
-  const [editTransactions, setEditTransactions] = useState([])
   const [singleData, setSingleData] = useState([])
   const [isLoading, setIsLoading] = useState(false);
   const { user } = useUser();
