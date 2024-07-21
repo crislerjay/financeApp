@@ -8,30 +8,16 @@ const PrivateRoutes = () => {
     const { signOut } = useClerk();
 
     useEffect(() => {
-      let timeout;
-
-      const resetTimeout = () => {
-          if (timeout) {
-              clearTimeout(timeout);
-          }
-          timeout = setTimeout(() => {
-              signOut();
-          }, 300000); // 5 minutes in milliseconds
+      const autoLogout = () => {
+        console.log('30 minutes have passed!');
+        signOut()
       };
-
-      const events = ['load', 'mousemove', 'mousedown', 'click', 'scroll', 'keypress'];
-
-      events.forEach(event => window.addEventListener(event, resetTimeout));
-
-      resetTimeout();
-
-      return () => {
-          events.forEach(event => window.removeEventListener(event, resetTimeout));
-          if (timeout) {
-              clearTimeout(timeout);
-          }
-      };
-    }, [signOut]);
+  
+      // aoto logout after 30 minutes (30 * 60 * 1000 milliseconds)
+      const timer = setTimeout(autoLogout, 1800000);
+  
+      return () => clearTimeout(timer);
+    }, []);
   
     if (!isLoaded) { return <LoadingSpinner /> }
 

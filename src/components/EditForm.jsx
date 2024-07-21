@@ -50,9 +50,11 @@ export default function EditForm({_id, _amount, _description, _category, _type, 
   };
 
   const onDelete = () => {
-    handleDelete(_id)
-    notifyDeleted()
-    navigate('/')
+    if (confirm("Delete this transaction permanently?")) {
+      handleDelete(_id)
+      notifyDeleted()
+      navigate('/')
+    } 
   }
 
   return (
