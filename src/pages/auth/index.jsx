@@ -1,7 +1,18 @@
-import { SignedOut, SignInButton, SignUpButton } from "@clerk/clerk-react";
+import { SignedOut, SignInButton, SignUpButton, useUser } from "@clerk/clerk-react";
+import { useNavigate } from "react-router-dom";
 import mv from '/assets/images/finance.jpg'
+import { useEffect } from "react";
 
 export default function Auth() {
+  const { isSignedIn } = useUser();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (isSignedIn) {
+      navigate("/"); // ⬅️ Redirect manually when signed in
+    }
+  }, [isSignedIn]);
+
   return (
     <div className="auth">
       <div className="intro">

@@ -12,6 +12,7 @@ import { TransactionsProvider } from './context/TransactionsContext';
 import { ToastContainer } from 'react-toastify';
 import Category from './pages/category';
 import SingleCategory from './pages/category/singleCategory';
+// import Maintenance from './components/Maintenance';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
             <Route path='/statistics' element={<Statistics/>} />
         </Route>
         <Route path='/auth' element={<Auth/>}/>
+        <Route path='/' element={<Dashboard/>}/>
         <Route path="*" element={<NotFound />} />
       </Routes>
       <ToastContainer />
